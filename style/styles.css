@@ -576,6 +576,8 @@ body {
     position: relative;
     z-index: -100;
     background-image: url("/image/Rectangle\ 10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
