@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white !important;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0px 80px;
+    position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;  
+}
+
+.logo img {
+    width: 300px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 70px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid snow;
+    font-size: 15px;
+    
+}
+
+.signup-btn {
+    background: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero, .goal, .result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+}
+
+.hero-text {
+    flex: 50%;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: #22A75D;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #191b2156;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 27.53px;
+    
+}
+
+.email-form {
+    padding: 50px 0px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 10px; */
+    position: relative;
+}
+
+.email-form input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    background-color: #dfdedf;
+    font-size: 20px;
+}
+
+.email-form button {
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    background: #22a75d;
+    color: white;
+    border: none;
+    padding: 11px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Hero Image */
+
+.hero-image-container{
+    margin-left: 20%;
+}
+.hero-image{
+    position: relative;
+    flex: 50%;
+}
+
+.hero-image .nv_image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-image .nv_image {
+    display: flex;
+}
+.hero-text-container{
+    margin-right: 100px;
+}
+
+#nv_01{
+    max-width: 100%;
+    min-width: 200px;
+    z-index: 20;
+}
+
+#nv_02{
+    max-width: 50%;
+    min-width: 130px;
+    position: relative;
+    right: 33%;
+    z-index: 10;
+}
+
+.container_auto{
+    position: relative;
+}
+
+.background_hero_image{
+    position: absolute;
+    top: -50%;
+    right: -19%;   
+    width: 100%;
+    max-width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/* ======================================================================================== */
+/* GOAL PART */
+.goal{
+    background-image: url("/image/up.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+
+.goal_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    padding: 20px;
+}
+
+.goal_card_item {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #f2f0f4f6;
+    padding: 60px;
+    padding-top: 30px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.goal_card_item .content p{
+    padding-bottom: 20px;
+    color: #191b2156;
+    text-align: justify;
+}
+
+.goal_card_item .content {
+    /* max-width: 600px; */
+    color: #4A4A4A;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    line-height: 1.5;
+    min-height: 450px;
+}
+
+.goal_card_item .title {
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.green-title {
+    color: #22A75D !important;
+}
+
+.blue-title {
+    color: #2278D4 !important;
+}
+
+.mission_nv_img,
+.vision_nv_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    min-height: 200px; /* Adjust height as needed */
+}
+
+.mission_nv_img img,
+.vision_nv_img img {
+    max-width: 210px; /* Adjust size if necessary */
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+}
+
+
+
+/* END GOAL PART */
+/* ======================================================================================== */
+
+
+/* ======================================================================================== */
+/* RESULT && PARTNER PART */
+
+.result{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 1;
+    background-image: url("/image/down.png");
+    background-size: calc(100vw);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+        /* margin-bottom: 250px; */
+}
+
+.result-stats{
+    width: 100%;
+    display: flex;
+}
+.card-item-result{
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number-stats {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 15px 0px;
+
+}
+.title-stats{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    /* font-weight: bolder; */
+}
+
+.partner{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.logo-partner{
+    flex: 15%;
+}
+
+.logo-partner img{
+    width: 100%;
+}
+/* ======================================================================================== */
+
+
+
+/* ======================================================================================== */
+/* PRODUCT */
+.product {
+    padding: 25px 150px;
+    position: relative;
+}
+.product-container{
+    display: flex;
+}
+
+.product .product-title{
+    color: #22A75D;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 100px;
+}
+
+.left-product{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right-product{
+    flex: 50%;
+}
+.card-product-item{
+    position: relative;
+    border-left: 1px dashed black;
+    border-radius: 25px;
+    padding: 40px;
+}
+.card-product-item-title{
+    margin-left: 80px;
+    color: #2278D4;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.card-product-item-content{
+    margin-left: 80px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 24.2px;
+}
+
+.flag-card-product-item{
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    width: 156px;
+}
+
+.flag-card-product-item img{
+    width: 100%;
+}
+
+/* ======================================================================================== */
+
+/* ======================================================================================== */
+/* SUPPORT */
+/* Định dạng chung */
+.support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px;
+    border-radius: 25px;
+    /* background-color: #F2F0F4; */
+    position: relative;
+
+    background-image: url("/image/Subtract.png");
+    background-repeat: no-repeat;
+    background-size: calc(100vw);
+}
+
+
+
+/* Bố cục bên trái */
+.support-details {
+    flex: 40%;
+    padding: 20px;
+}
+
+.support-details-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #22A75D; /* Màu xanh lá */
+    text-transform: uppercase;
+    padding: 45px 0;
+}
+
+.support-details-content p {
+    font-size: 20px;
+    color: #191b2156;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Bố cục bên phải (form) */
+.support-form-details {
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+
+    background: #F7F5F9;
+    border-radius: 25px;
+}
+
+.support-form {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.support-form-01{
+    flex: 30%;
+}
+.support-form-02{
+    flex: 70%;
+}
+
+.support-form-02 textarea{
+    height: 200px;
+}
+
+
+/* Form inputs */
+.support-form textarea,
+.support-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    border: 1px solid #0052B599;
+    border-radius: 5px;
+}
+
+.support-form textarea{
+    resize: vertical;
+}
+
+.send-form-support{
+    width: 100%;
+    text-align: right;
+}
+
+/* Nút gửi */
+.send-btn {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.rocket{
+    float: right;
+    width: 20%;
+}
+
+.rocket img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ======================================================================================== */
+
+/* ======================================================================================== */
+/* OFFICE */
+
+.office {
+    padding: 40px 150px;
+    position: relative;
+    background: #0099FF;
+}
+
+
+.office-title{
+    padding: 80px 0px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #F7F5F9;
+}
+
+.office-content{
+    padding: 40px;
+    display: flex;
+    gap: 10px;
+}
+.office-item{
+    flex: 1;
+}
+
+.office-item-middle{
+    margin-top: 50px;
+    position: relative;
+}
+
+.office-item img{
+    width: 100%;
+    object-fit: cover;   
+}
+
+.office-text {
+    margin-top: 100px;
+}
+
+.office-text p{
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.office-item-middle-image-left{
+    max-width: 50%;
+    position: absolute;
+    top: 150px;
+    left: -150px;
+}
+.office-item-middle-image-left img{
+    width: 100%;
+    object-fit: cover;
+}
+.office-item-middle-image-right{
+    max-width: 50%;
+    position: absolute;
+    top: 150px;
+    right: -150px;
+}
+/* ======================================================================================== */
+
+/* ======================================================================================== */
+/* FOOTER */
+
+
+.footer{
+    padding: 40px 150px;
+    position: relative;
+    z-index: -100;
+    background-image: url("/image/Rectangle\ 10.png");
+}
+
+
+.more-infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: white;
+}
+
+.more-infor div{
+    border-bottom: 2px solid white;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item{
+    padding: 45px;
+    flex: 1;
+    color: white;
+}
+.contact{
+    display: flex;
+    padding: 20px;
+}
+.contact span{
+    padding: 0px 20px;
+}
+/* ======================================================================================== */
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .background_hero_image{
+        right: 0;
+    }
+    .frame{
+        padding: 40px 10px;
+    }
+
+    .container{
+        padding: 0px 20px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+    .goal_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .goal_card_item {
+        width: 90%;
+        padding: 50px;
+    }
+
+    .mission_nv_img img,
+    .vision_nv_img img {
+        max-width: 150px;
+    }
+
+    .right-product{
+        display: none;
+    }
+    .card-product-item{
+        border: none;
+    }
+
+    .footer-contact{
+        flex-direction: column;
+    }
+
+
+    .hero-text-container{
+        margin-right: 0;
+    }
+
+    .support{
+        flex-direction: column;
+    }
+
+    .flag-card-product-item{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .support-details-title{
+        text-align: center;
+    }
+
+    .office-item-middle-image-left{
+        top: 50px;
+        left: -30%;
+    }
+
+    .office-item-middle-image-right{
+        top: 50px;
+        right: -30%;
+    }    
+
+    .nav-links li a{
+        color: black;
+    }
+    .nav-links li a{
+        border-bottom: 2px solid black;
+    }
+
+    .signup-btn{
+        background-color: #0099FF;
+    }
+
+    .email-form{
+        display: none;
+    }
+}
